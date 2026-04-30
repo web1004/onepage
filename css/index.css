@@ -1,0 +1,123 @@
+@import url(reset.css);
+
+html{scroll-behavior: smooth;}  /* 스크롤시 부드럽게 이동 */
+
+body{
+  line-height: 1.5;
+  color: #222;
+}
+
+/* Top Button */
+.goto-top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 38px;
+  border: 1px solid #3a3a3a;
+  border-radius: 10px;
+  background-color: #fff;
+  /* z-index: 높은숫자;  ->모든 컴텐츠보다 맨위에 올라오게 함 */
+}
+
+
+/* Header _______________________ */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+#header-inner{
+  width: 1200px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: crimson;
+}
+.gnb{
+  display: flex;
+  column-gap: 30px;
+}
+.gnb a{
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #333;
+  font-weight: 500;
+}
+.gnb a:hover{color: crimson;}
+
+
+/* Main________________________ */
+main{
+  height: 600px;
+  /* background-image: url(../image/main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;  */
+
+  background: url(../image/main.jpg) no-repeat center/cover fixed;
+  margin-top: 80px; /* 헤더가 fixed로 둥둥떠있는 상태이므로 헤더 높이만큼 내려줌 */
+}
+
+
+/* Section________________________ */
+/* 공통 */
+section{}
+.section-inner{
+  width: 1200px;
+  margin: auto;
+  padding: 100px 0;
+}
+section h2{
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+#s1{
+  background-color: royalblue;
+  height: 700px;
+}
+#s2{
+  background-color: orange;
+  height: 800px;
+}
+#s3{
+  background-color: yellowgreen;
+  height: 1000px;
+}
+#s4{
+  background-color: gray;
+  height: 800px;
+}
+
+
+/* Footer________________________ */
+footer{
+  background-color: #333;
+  text-align: center;
+  padding: 100px 0;
+}
+footer address{
+  font-style: normal;
+  font-size: 14px;
+  color: #999;
+}
+footer address strong{
+  text-decoration: underline;
+  color: crimson;
+  font-size: 15px;
+}
